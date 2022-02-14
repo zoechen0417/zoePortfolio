@@ -1,0 +1,104 @@
+.page {
+    .menu {
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        .menuWrap {
+            width: 100%;
+            height: 60px;
+            background: #cd6b98;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .showMneu {
+                width: 30px;
+                height: 30px;
+                background: url("../images/menu.png");
+            }
+            .hideMenu {
+                width: 30px;
+                height: 30px;
+                background: url("../images/close.png");
+                display: none;
+            }
+        }
+
+        .mentcon {
+            width: 100%;
+            height: 0px;
+            background: rgba(255, 255, 255, 0.9);
+            padding-top: 50px;
+            opacity: 0;
+            pointer-events: none;
+            a {
+                display: flex;
+                height: 80px;
+                padding: 20px 0px;
+                img {
+                    margin: 0 auto;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+        .show {
+            opacity: 1;
+            pointer-events: initial;
+            height: 100vh;
+        }
+    }
+    .content {
+        width: 100%;
+        padding-top: 60px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.back {
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .goback {
+        @include rect(113px, 113px);
+        background: url("../images/go-back.png") no-repeat center;
+        background-size: cover;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        .menu {
+            .menuWrap {
+                .showMneu {
+                }
+                .hideMenu {
+                }
+            }
+
+            .mentcon {
+                a {
+                    height: 60px;
+                    padding: 10px 0px;
+                    img {
+                    }
+                }
+            }
+            .show {
+            }
+        }
+        .content {
+            img {
+            }
+        }
+    }
+    .back {
+        padding: 50px;
+        .goback {
+            @include rect(80px, 80px);
+        }
+    }
+}

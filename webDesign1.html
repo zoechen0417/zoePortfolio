@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./images/icon.png" />
+        <link rel="bookmart" href="./images/icon.png" />
+        <title>京嘉科技</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="menu">
+                <div class="menuWrap">
+                    <div class="showMneu" onclick="showMenu()"></div>
+                    <div class="hideMenu" onclick="hideMenu()"></div>
+                </div>
+                <div class="mentcon">
+                    <a href="./webDesign.html">
+                        <img src="./images/t1.png" alt="" />
+                    </a>
+                    <a href="./info.html">
+                        <img src="./images/t2.png" alt="" />
+                    </a>
+                    <a href="./community.html">
+                        <img src="./images/t3.png" alt="" />
+                    </a>
+                    <a href="./banner.html">
+                        <img src="./images/t4.png" alt="" />
+                    </a>
+                    <a href="./festive.html">
+                        <img src="./images/t5.png" alt="" />
+                    </a>
+                    <a href="./ciDesign.html">
+                        <img src="./images/t6.png" alt="" />
+                    </a>
+                    <a href="./construction.html">
+                        <img src="./images/t7.png" alt="" />
+                    </a>
+                    <a href="./shiseido.html">
+                        <img src="./images/t8.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <img src="./images/web1.jpg" alt="" />
+            </div>
+            <div class="back">
+                <a class="goback" href="./index.html"></a>
+            </div>
+        </div>
+    </body>
+    <script>
+        const showMenu = () => {
+            let menuList = document.querySelector(".mentcon");
+            menuList.classList.add("show");
+
+            let showMenu = document.querySelector(".showMneu");
+            let closeMenu = document.querySelector(".hideMenu");
+            showMenu.style = "display: none";
+            closeMenu.style = "display: block";
+        };
+        const hideMenu = () => {
+            let menuList = document.querySelector(".mentcon");
+            menuList.classList.remove("show");
+
+            let showMenu = document.querySelector(".showMneu");
+            let closeMenu = document.querySelector(".hideMenu");
+            showMenu.style = "display: block";
+            closeMenu.style = "display: none";
+        };
+    </script>
+</html>

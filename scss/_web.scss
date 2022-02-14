@@ -1,0 +1,53 @@
+.web {
+    .top {
+        width: 100%;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .webcon {
+        max-width: 1280px;
+        width: 95%;
+        @include center;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .list {
+            display: block;
+            width: 32%;
+            height: 300px;
+            background: #aa0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .web {
+        .top {
+            img {
+            }
+        }
+        .webcon {
+            .list {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .web {
+        .top {
+            img {
+            }
+        }
+        .webcon {
+            .list {
+                width: 100%;
+            }
+        }
+    }
+}

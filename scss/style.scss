@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+@import "./mixin";
+@import "./index";
+@import "./page";
+@import "./web";
