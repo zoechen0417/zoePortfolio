@@ -17,9 +17,11 @@
         .list {
             display: block;
             width: 32%;
-            height: 300px;
-            background: #aa0;
             margin-bottom: 30px;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -437,9 +437,13 @@
 .web .webcon .list {
   display: block;
   width: 32%;
-  height: 300px;
-  background: #aa0;
   margin-bottom: 30px;
+}
+
+.web .webcon .list img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1024px) {
