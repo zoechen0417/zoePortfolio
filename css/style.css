@@ -232,14 +232,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
   }
   .index .list__top .block1 {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: initial;
+    margin-top: 1050px;
     margin-right: 0px;
   }
   .index .list__top .block2 {
     width: 100%;
+    position: absolute;
+    top: 0;
   }
   .index .list__top .block2 .block21 {
     -webkit-box-orient: vertical;

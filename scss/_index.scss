@@ -213,13 +213,17 @@
         .list {
             &__top {
                 flex-direction: column;
+                position: relative;
                 .block1 {
                     width: 100%;
-                    margin-bottom: 50px;
+                    margin-bottom: initial;
+                    margin-top: 1050px;
                     margin-right: 0px;
                 }
                 .block2 {
                     width: 100%;
+                    position: absolute;
+                    top: 0;
                     .block21 {
                         flex-direction: column;
                     }
